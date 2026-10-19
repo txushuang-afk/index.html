@@ -30,27 +30,15 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
 .hero-title{font-size:18px;font-weight:800;line-height:1.45}
 .subline{color:var(--purple2);font-size:13px;margin-top:3px}
 .pill-btn{white-space:nowrap;background:linear-gradient(110deg,#9d39ed,#a33ef0);border-radius:28px;padding:12px 17px;font-weight:700;box-shadow:0 6px 18px #8e2ce533}
-.artist{display:flex;gap:16px;padding:16px;border:1px solid #30283a;background:var(--panel);border-radius:24px;margin-bottom:20px;align-items:center}
-.artist img{width:112px;height:146px;object-fit:cover;object-position:center 22%;border-radius:18px;background:#08070c}
-.artist-body{min-width:0}
-.artist-name{font-size:23px;font-weight:800;margin-bottom:9px}
-.spark{color:var(--purple2);font-size:19px}
-.bio{font-size:13px;line-height:1.8;color:#a7a0af;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
-.tag{border-radius:18px;background:#282230;color:#aaa2b3;font-size:11px;padding:5px 10px}
-.tag.purple{color:#c98cff;border:1px solid #7d32b6;background:#321843}
 .shortcuts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0 26px}
-.shortcut{height:126px;border-radius:22px;background:linear-gradient(155deg,#21192d,#17111f);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:1px solid #382847;font-weight:700;font-size:15px;box-shadow:inset 0 1px 0 #ffffff08;transition:transform .15s,border-color .15s}
-.shortcut:active{transform:scale(.97);border-color:#9b43f2}
-.shortcut-icon{width:56px;height:56px;border-radius:19px;display:grid;place-items:center;background:linear-gradient(145deg,#38204b,#291833);color:#c06cff;border:1px solid #4b2c61;box-shadow:0 5px 16px #0003}
+.shortcut{height:126px;border-radius:22px;background:linear-gradient(155deg,#21192d,#17111f);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;border:1px solid #382847;font-weight:700;font-size:15px;box-shadow:inset 0 1px 0 #ffffff08}
+.shortcut:active{border-color:#9b43f2}
+.shortcut-icon{width:56px;height:56px;border-radius:19px;display:grid;place-items:center;background:linear-gradient(145deg,#38204b,#291833);color:#c06cff;border:1px solid #4b2c61}
 .shortcut svg,.tab svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .section-head{display:flex;align-items:center;justify-content:space-between;font-size:20px;font-weight:800;margin:8px 0 17px}
-.more{font-size:14px;color:var(--purple2);font-weight:600}
+.more{font-size:14px;color:var(--purple2);font-weight:600;background:transparent;padding:0}
 .event-card,.post,.profile-card,.empty,.setting-row{border:1px solid var(--line);background:var(--panel);border-radius:22px;overflow:hidden}
-.event-card{margin-bottom:16px;box-shadow:0 8px 24px #0002}
-.event-photo{height:156px;background:linear-gradient(130deg,#252038,#10111d);position:relative;display:flex;align-items:end;padding:14px;background-size:cover;background-position:center}
-.event-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#090710d9,transparent 75%)}
-.event-photo>*{z-index:1}
+.event-card{margin-bottom:16px}
 .event-meta{padding:14px 16px}
 .event-name{font-size:17px;font-weight:800}
 .muted{color:var(--muted);font-size:13px;line-height:1.7}
@@ -68,14 +56,10 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
 .post-name{font-size:14px;font-weight:700}
 .post-time{font-size:11px;color:var(--muted);margin-top:3px}
 .post-text{font-size:14px;line-height:1.8;white-space:pre-wrap}
-.post-actions{display:flex;gap:20px;color:#a69caf;margin-top:14px;font-size:13px}
-.post-actions button{background:transparent;color:inherit;padding:0}
 .compose{width:100%;padding:14px;background:#21172c;border:1px solid #4c2b66;border-radius:16px;color:#d9b4ff;margin-bottom:15px;text-align:left}
 .profile-card{padding:20px;margin-bottom:15px;display:flex;align-items:center;gap:14px}
 .profile-avatar{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,#7430a6,#e22d91)}
 .profile-name{font-size:19px;font-weight:800}
-.checkin{padding:18px;background:linear-gradient(120deg,#29143c,#171020);border:1px solid #4a2a60;border-radius:20px;margin-bottom:17px}
-.checkin h3{margin:0 0 8px}
 .setting-row{padding:16px;display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-size:14px}
 .empty{text-align:center;padding:34px 15px;color:#938a9f;font-size:13px;line-height:1.8}
 .modal{display:none;position:fixed;inset:0;z-index:20;background:#000a;align-items:flex-end;justify-content:center}
@@ -85,15 +69,13 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
 .field{width:100%;padding:14px;border-radius:13px;background:#0d0a13;border:1px solid #34283e;color:white;outline:none;margin-bottom:12px}
 .primary{width:100%;padding:14px;border-radius:15px;background:linear-gradient(100deg,#9637e8,#b34bf0);font-weight:800;margin-top:6px;color:#fff;border:0}
 .secondary{width:100%;padding:12px;background:transparent;color:#bba9c9}
-.tiny{font-size:11px;color:#8c8297;line-height:1.7;margin-top:12px}
-.switch{display:flex;gap:7px;margin:0 0 16px}
-.switch button{flex:1;padding:10px;background:#211a2a;border-radius:12px;color:#a89bb6}
-.switch button.on{background:#4a2265;color:#fff}
 .toast{position:fixed;z-index:50;bottom:100px;left:50%;transform:translateX(-50%);background:#35263e;border:1px solid #67407b;color:#fff;padding:11px 16px;border-radius:25px;font-size:13px;display:none;white-space:nowrap}
 .toast.show{display:block;animation:fade 2s forwards}
 @keyframes fade{0%,75%{opacity:1}100%{opacity:0}}
 .loading{text-align:center;padding:20px;color:#8c8297;font-size:13px}
 </style>
+<!-- 使用国内稳定线路加载 Supabase -->
+<script src="https://fastly.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 <div class="app">
@@ -106,20 +88,20 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
         <button class="shortcut" onclick="go('community')"><span class="shortcut-icon"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5H7l-3.5 2v-5A7.5 7.5 0 1 1 20 11.5Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg></span>社区</button>
         <button class="shortcut" onclick="openAuth()"><span class="shortcut-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></svg></span>登录</button>
       </div>
-      <div class="section-head"><span>社区热帖</span><button class="more" onclick="go('community')">进入社区 ›</button></div>
+      <div class="section-head"><span>社区热帖</span><button class="more" onclick="go('community')" style="background:transparent;border:0;">进入社区 ›</button></div>
       <div id="homePosts"><div class="loading">正在连接云端…</div></div>
     </section>
     
     <section class="page" id="schedule">
         <div class="page-title">巡演行程</div>
-        <div class="page-desc">目前为静态展示，后续可接入后台。</div>
+        <div class="page-desc">静态展示，后续可接入后台。</div>
         <div class="event-card"><div class="event-meta"><div class="row"><div class="event-name">贵阳站</div><span class="status-tag">近期</span></div><div class="muted">2026年10月24日</div></div></div>
         <div class="event-card"><div class="event-meta"><div class="row"><div class="event-name">厦门站</div><span class="status-tag">下一站</span></div><div class="muted">2026年10月31日</div></div></div>
     </section>
 
     <section class="page" id="community">
         <div class="page-title">谦友社区</div>
-        <div class="page-desc">大家发的帖子会实时同步到云端。</div>
+        <div class="page-desc">大家发的帖子会实时同步。</div>
         <button class="compose" onclick="openPost()">＋　发布一条动态</button>
         <div id="posts"><div class="loading">加载中…</div></div>
     </section>
@@ -135,7 +117,6 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
             <button class="outline-btn" id="authBtn" onclick="openAuth()">登录 / 注册</button>
             <button class="outline-btn" id="logoutBtn" onclick="logout()" style="display:none;color:#ff8fbf;border-color:#ff8fbf">退出</button>
         </div>
-        <div class="checkin"><div class="row"><div><h3>每日签到 ✦</h3><div class="muted">积累专属积分</div></div><button class="pill-btn" onclick="toast('签到功能开发中')">立即签到</button></div></div>
     </section>
   </main>
   
@@ -150,208 +131,211 @@ button:active{transform:scale(.98);filter:brightness(1.12)}
 <div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="sheet" id="sheet"></div></div>
 <div class="toast" id="toast"></div>
 
-<!-- 引入 Supabase 官方库 -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 const $=id=>document.getElementById(id);
 
-// 初始化 Supabase（去掉了你网址里多余的 /rest/v1/）
-const supabaseUrl = 'https://vkogajodhtztgmvnrhdf.supabase.co';
-const supabaseKey = 'sb_publishable_Y1irhDmdwb_0klRHmF3lvg_aqRaYBx3';
-const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+// 防止库加载失败导致页面卡死
+if (typeof supabase === 'undefined') {
+    alert('网络异常：核心组件未能加载，请检查网络连接或稍后再试。');
+} else {
+    const supabaseUrl = 'https://vkogajodhtztgmvnrhdf.supabase.co';
+    const supabaseKey = 'sb_publishable_Y1irhDmdwb_0klRHmF3lvg_aqRaYBx3';
+    const sb = supabase.createClient(supabaseUrl, supabaseKey);
+    window.sb = sb;
 
-let currentUser = null;
+    let currentUser = null;
 
-// 页面切换
-function go(id){
-    document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
-    document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
-    window.scrollTo({top:0,behavior:'smooth'});
-    if(id==='community') fetchPosts();
-}
-
-// 弹窗控制
-function openSheet(c){$('sheet').innerHTML=c;$('modal').classList.add('show');}
-function closeModal(){$('modal').classList.remove('show');}
-function toast(m){const el=$('toast');el.textContent=m;el.classList.remove('show');void el.offsetWidth;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2100);}
-function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-
-// ================= 认证系统 (登录/注册) =================
-function openAuth(){
-    openSheet(`
-        <h2>加入谦友社区</h2>
-        <input class="field" id="authEmail" type="email" placeholder="邮箱地址">
-        <input class="field" id="authName" placeholder="昵称（仅注册需要）">
-        <input class="field" id="authPass" type="password" placeholder="密码（至少6位）">
-        <button class="primary" id="btnLogin" onclick="doAuth('login')">登录</button>
-        <button class="secondary" id="btnReg" onclick="doAuth('register')">注册新账号</button>
-        <button class="secondary" onclick="closeModal()" style="margin-top:10px">取消</button>
-    `);
-}
-
-async function doAuth(type) {
-    const email = $('authEmail').value.trim();
-    const pass = $('authPass').value;
-    const name = $('authName').value.trim();
-    
-    if(!email || !pass) { toast('请填写邮箱和密码'); return; }
-    if(pass.length < 6) { toast('密码至少6位'); return; }
-    
-    $('btnLogin').textContent = '处理中…';
-    $('btnReg').disabled = true;
-
-    if(type === 'register') {
-        if(!name) { toast('请填写昵称'); $('btnLogin').textContent='登录'; $('btnReg').disabled=false; return; }
-        const { data, error } = await supabase.auth.signUp({
-            email: email,
-            password: pass,
-            options: { data: { display_name: name } }
-        });
-        if(error) toast('注册失败：' + error.message);
-        else { toast('注册成功，已自动登录'); closeModal(); updateAuthUI(); }
-    } else {
-        const { data, error } = await supabase.auth.signInWithPassword({ email, password: pass });
-        if(error) toast('登录失败：' + error.message);
-        else { toast('登录成功'); closeModal(); updateAuthUI(); fetchPosts(); }
+    function go(id){
+        document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));
+        document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.tab===id));
+        window.scrollTo({top:0,behavior:'smooth'});
+        if(id==='community') fetchPosts();
     }
-    
-    $('btnLogin').textContent = '登录';
-    $('btnReg').disabled = false;
-}
 
-async function logout() {
-    await supabase.auth.signOut();
-    toast('已退出登录');
-    updateAuthUI();
-    fetchPosts();
-}
+    function openSheet(c){$('sheet').innerHTML=c;$('modal').classList.add('show');}
+    function closeModal(){$('modal').classList.remove('show');}
+    function toast(m){const el=$('toast');el.textContent=m;el.classList.remove('show');void el.offsetWidth;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2100);}
+    function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 
-function updateAuthUI() {
-    if(currentUser) {
-        const name = currentUser.user_metadata?.display_name || '谦友';
-        $('myName').textContent = name;
-        $('myEmail').textContent = currentUser.email;
-        $('myAvatar').textContent = name[0];
-        $('authBtn').style.display = 'none';
-        $('logoutBtn').style.display = 'block';
-    } else {
-        $('myName').textContent = '游客谦友';
-        $('myEmail').textContent = '未登录';
-        $('myAvatar').textContent = '谦';
-        $('authBtn').style.display = 'block';
-        $('logoutBtn').style.display = 'none';
+    // 认证系统
+    function openAuth(){
+        openSheet(`
+            <h2>加入谦友社区</h2>
+            <input class="field" id="authEmail" type="email" placeholder="邮箱地址">
+            <input class="field" id="authName" placeholder="昵称（仅注册需要）">
+            <input class="field" id="authPass" type="password" placeholder="密码（至少6位）">
+            <button class="primary" id="btnLogin" onclick="doAuth('login')">登录</button>
+            <button class="secondary" id="btnReg" onclick="doAuth('register')">注册新账号</button>
+            <button class="secondary" onclick="closeModal()" style="margin-top:10px">取消</button>
+        `);
     }
-}
 
-// 监听登录状态变化
-supabase.auth.onAuthStateChange((event, session) => {
-    currentUser = session;
-    updateAuthUI();
-});
-
-// ================= 发帖与读取系统 =================
-function openPost() {
-    if(!currentUser) { toast('请先在“我的”页面登录'); return; }
-    openSheet(`
-        <h2>发布动态</h2>
-        <textarea class="field" id="postText" rows="5" placeholder="分享你的故事…"></textarea>
-        <button class="primary" id="btnSubmitPost" onclick="submitPost()">发布到云端</button>
-        <button class="secondary" onclick="closeModal()">取消</button>
-    `);
-}
-
-async function submitPost() {
-    const text = $('postText').value.trim();
-    if(!text) { toast('内容不能为空'); return; }
-    
-    const btn = $('btnSubmitPost');
-    btn.textContent = '发送中…';
-    
-    const name = currentUser.user_metadata?.display_name || '谦友';
-    
-    const { error } = await supabase.from('posts').insert([{
-        content: text,
-        user_id: currentUser.user.id,
-        author_name: name
-    }]);
-    
-    if(error) {
-        toast('发送失败，请检查是否建表：' + error.message);
-        btn.textContent = '重试';
-    } else {
-        toast('发布成功');
-        closeModal();
-        fetchPosts();
-        go('community');
-    }
-}
-
-async function fetchPosts() {
-    const list = $('posts');
-    const homeList = $('homePosts');
-    
-    Date const { data, error } = await sup(pabase
-        .from('posts')
-        .select('*')
-        .order('created_at', { ascending: false });
+    async function doAuth(type) {
+        const email = $('authEmail').value.trim();
+        const pass = $('authPass').value;
+        const name = $('authName').value.trim();
         
-    if(error) {
-        list.innerHTML = `<div class="empty">读取失败：${error.message}<br>请确保执行了 SQL 建表。</div>`;
-        return;
-    }
-    
-    if(!data || data.length === 0) {
-        list.innerHTML = '<div class="empty"><div class="empty-icon">✧</div>暂无动态，快来发第一条吧</div>';
-        if(homeList) homeList.innerHTML = '<div class="empty">暂无动态</div>';
-        return;
-    }
-    
-    // 渲染列表
-    list.innerHTML = data.map(p => {
-        const time = new.created_at).toLocaleString('zh-CN', {hour12:false});
-        const isMine = currentUser && currentUser.user.id === p.user_id;
-        return `
-        <div class="post">
-            <div class="post-head">
-                <div class="avatar">${esc(p.author_name[0])}</div>
-                <div style="flex:1">
-                    <div class="post-name">${esc(p.author_name)}</div>
-                    <div class="post-time">${time}</div>
-                </div>
-                ${isMine ? `<button class="secondary" style="width:auto;padding:4px;color:#ff8fbf" onclick="deletePost(${p.id})">删除</button>` : ''}
-            </div>
-            <div class="post-text">${esc(p.content)}</div>
-        </div>`;
-    }).join('');
+        if(!email || !pass) { toast('请填写邮箱和密码'); return; }
+        if(pass.length < 6) { toast('密码至少6位'); return; }
+        
+        $('btnLogin').textContent = '处理中…';
+        $('btnReg').disabled = true;
 
-    // 首页显示最新一条
-    if(homeList) {
-        homeList.innerHTML = `
-        <div class="post">
-            <div class="post-text">${esc(data[0].content)}</div>
-            <div class="muted" style="margin-top:8px">来自：${esc(data[0].author_name)}</div>
-        </div>`;
+        if(type === 'register') {
+            if(!name) { toast('请填写昵称'); $('btnLogin').textContent='登录'; $('btnReg').disabled=false; return; }
+            const { data, error } = await window.sb.auth.signUp({
+                email: email,
+                password: pass,
+                options: { data: { display_name: name } }
+            });
+            if(error) toast('注册失败：' + error.message);
+            else { toast('注册成功'); closeModal(); updateAuthUI(); }
+        } else {
+            const { data, error } = await window.sb.auth.signInWithPassword({ email, password: pass });
+            if(error) toast('登录失败：' + error.message);
+            else { toast('登录成功'); closeModal(); updateAuthUI(); fetchPosts(); }
+        }
+        
+        $('btnLogin').textContent = '登录';
+        $('btnReg').disabled = false;
     }
-}
 
-async function deletePost(id) {
-    if(!confirm('确定删除这条动态吗？')) return;
-    const { error } = await supabase.from('posts').delete().eq('id', id);
-    if(error) toast('删除失败：' + error.message);
-    else { toast('已删除'); fetchPosts(); }
-}
+    async function logout() {
+        await window.sb.auth.signOut();
+        toast('已退出登录');
+        updateAuthUI();
+        fetchPosts();
+    }
 
-// ================= 启动 =================
-function init() {
-    fetchPosts();
-    
-    // 检查当前用户
-    supabase.auth.getSession().then(({ data: { session } }) => {
+    function updateAuthUI() {
+        if(currentUser) {
+            const name = currentUser.user_metadata?.display_name || '谦友';
+            $('myName').textContent = name;
+            $('myEmail').textContent = currentUser.email;
+            $('myAvatar').textContent = name[0];
+            $('authBtn').style.display = 'none';
+            $('logoutBtn').style.display = 'block';
+        } else {
+            $('myName').textContent = '游客谦友';
+            $('myEmail').textContent = '未登录';
+            $('myAvatar').textContent = '谦';
+            $('authBtn').style.display = 'block';
+            $('logoutBtn').style.display = 'none';
+        }
+    }
+
+    window.sb.auth.onAuthStateChange((event, session) => {
         currentUser = session;
         updateAuthUI();
     });
+
+    // 帖子系统
+    function openPost() {
+        if(!currentUser) { toast('请先在“我的”页面登录'); return; }
+        openSheet(`
+            <h2>发布动态</h2>
+            <textarea class="field" id="postText" rows="5" placeholder="分享你的故事…"></textarea>
+            <button class="primary" id="btnSubmitPost" onclick="submitPost()">发布到云端</button>
+            <button class="secondary" onclick="closeModal()">取消</button>
+        `);
+    }
+
+    async function submitPost() {
+        const text = $('postText').value.trim();
+        if(!text) { toast('内容不能为空'); return; }
+        
+        const btn = $('btnSubmitPost');
+        btn.textContent = '发送中…';
+        
+        const name = currentUser.user_metadata?.display_name || '谦友';
+        
+        const { error } = await window.sb.from('posts').insert([{
+            content: text,
+            user_id: currentUser.user.id,
+            author_name: name
+        }]);
+        
+        if(error) {
+            toast('发送失败：' + error.message);
+            btn.textContent = '重试';
+        } else {
+            toast('发布成功');
+            closeModal();
+            fetchPosts();
+            go('community');
+        }
+    }
+
+    async function fetchPosts() {
+        const list = $('posts');
+        const homeList = $('homePosts');
+        
+        try {
+            // 加个超时防止无限转圈
+            const fetchPromise = window.sb.from('posts').select('*').order('created_at', { ascending: false });
+            const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error('连接超时，请检查网络')), 5000));
+            
+            const { data, error } = await Promise.race([fetchPromise, timeoutPromise]);
+                
+            if(error) {
+                list.innerHTML = `<div class="empty">读取失败：${error.message}<br>请确保数据库建表。</div>`;
+                if(homeList) homeList.innerHTML = '<div class="empty">网络连接失败</div>';
+                return;
+            }
+            
+            if(!data || data.length === 0) {
+                list.innerHTML = '<div class="empty"><div class="empty-icon">✧</div>暂无动态</div>';
+                if(homeList) homeList.innerHTML = '<div class="empty">暂无动态</div>';
+                return;
+            }
+            
+            list.innerHTML = data.map(p => {
+                const time = new Date(p.created_at).toLocaleString('zh-CN', {hour12:false});
+                const isMine = currentUser && currentUser.user.id === p.user_id;
+                return `
+                <div class="post">
+                    <div class="post-head">
+                        <div class="avatar">${esc(p.author_name[0])}</div>
+                        <div style="flex:1">
+                            <div class="post-name">${esc(p.author_name)}</div>
+                            <div class="post-time">${time}</div>
+                        </div>
+                        ${isMine ? `<button class="secondary" style="width:auto;padding:4px;color:#ff8fbf" onclick="deletePost(${p.id})">删除</button>` : ''}
+                    </div>
+                    <div class="post-text">${esc(p.content)}</div>
+                </div>`;
+            }).join('');
+
+            if(homeList) {
+                homeList.innerHTML = `
+                <div class="post">
+                    <div class="post-text">${esc(data[0].content)}</div>
+                    <div class="muted" style="margin-top:8px">来自：${esc(data[0].author_name)}</div>
+                </div>`;
+            }
+        } catch (err) {
+            list.innerHTML = `<div class="empty">${err.message}</div>`;
+            if(homeList) homeList.innerHTML = '<div class="empty">网络连接超时</div>';
+        }
+    }
+
+    async function deletePost(id) {
+        if(!confirm('确定删除这条动态吗？')) return;
+        const { error } = await window.sb.from('posts').delete().eq('id', id);
+        if(error) toast('删除失败：' + error.message);
+        else { toast('已删除'); fetchPosts(); }
+    }
+
+    // 启动
+    function init() {
+        fetchPosts();
+        window.sb.auth.getSession().then(({ data: { session } }) => {
+            currentUser = session;
+            updateAuthUI();
+        });
+    }
+    init();
 }
-init();
 </script>
 </body>
 </html>
